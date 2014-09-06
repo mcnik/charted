@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Authorized</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Sanchez:400,700'>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/supersized.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        [touch-action="none"] {
+            -ms-touch-action: none;
+            touch-action: none;
+        }
+        [touch-action="pan-x"] {
+            -ms-touch-action: pan-x;
+            touch-action: pan-x;
+        }
+        [touch-action="pan-y"] {
+            -ms-touch-action: pan-y;
+            touch-action: pan-y;
+        }
+        [touch-action="scroll"],
+        [touch-action="pan-x pan-y"],
+        [touch-action="pan-y pan-x"] {
+            -ms-touch-action: pan-x pan-y;
+            touch-action: pan-x pan-y;
+        }
+    </style>
+    <style id="style-1-cropbar-clipper">
+        /* Copyright 2014 Evernote Corporation. All rights reserved. */
+        .en-markup-crop-options {
+            top: 18px !important;
+            left: 50% !important;
+            margin-left: -90px !important;
+            width: 180px !important;
+            border: 2px rgba(255, 255, 255, .38) solid !important;
+            border-radius: 4px !important;
+        }
+        .en-markup-crop-options div div:first-of-type {
+            margin-left: 0px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <h1>Email</h1>
+        <form method="POST" action="/authorize">
+            <input id="csrf_token" name="csrf_token" type="hidden" value="1410037175.43##b56e65c883bafbad9d68cf90d60e0c54a650c610">
+            <!-- <label for="email"></label> -->
+            <input id="email" name="email" size="20" type="text" value="">
+            <input type="submit" class="go" value="Finish Setup">
+        </form>
+    </div>
+
+    <!-- Javascript -->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/supersized.3.2.7.min.js"></script>
+    <script src="js/supersized-init.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
